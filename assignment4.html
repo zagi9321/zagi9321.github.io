@@ -6,8 +6,11 @@
   </head>
   <body>
 
+    <h1>Assignment 4</h1>
     <!-- Table of contents -->
     <div>
+      <h2>Challenge 1: Navigation Bar</h2>
+
       <ul>
         <li><a href="./index.html">home</a></li>
         <li><a href="./assignment1.html">assignment 1</a></li>
@@ -16,10 +19,9 @@
       </ul>
     </div>
 
-    <!-- Challenge 2 -->
+    <!-- Chessboard -->
     <div style="background-color:lightgray">
-
-      <h1>Challenge 1: Chessboard</h1>
+      <h2>Challenge 2: Chessboard</h2>
 
       <table>
         <tr>
@@ -136,11 +138,34 @@
         </tr>
       </table>
 
-    </div>
+  </div>
+    <!-- Form -->
+  <div style="line-height:2">
+      <h2>Challenge 3: Create a Form</h2>
 
-    <div>
+      <form>
+        <label for="name">Please input your name:</label>
+        <input type="text" id="name">
 
+        <br>
+
+        <label for="age">Please input your age:</label>
+        <input type="button" id="age" value="Ok">
+
+        <br>
+
+        <label for="number">Please input your phone number:</label>
+        <input type="range" id="number" value="0" min="0" max="9999999999" oninput="this.nextElementSibling.value = this.value">
+        <output>0</output>
+
+        <br>
+
+        <input type="submit" id="submit">
+      </form>
+
+    <!-- Google Search Page -->
     </div>
+    <h2>Challenge 4: Google Search Page</h2>
 
     <div>
 
