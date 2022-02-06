@@ -7,14 +7,31 @@
       .searchText {
         color:lightgray;
         font-family:"Cantarell";
+        font-size:14px;
+        margin-top:0px;
+        margin-bottom:0px;
       }
+      /* These are not Google's official hex codes, I jsut eyeballed them */
       .linkText {
-        color:#3866E5;
+        color:#7995E3;
         font-family:"Cantarell";
+        font-size:20px;
+        margin-top:0px;
+        margin-bottom:0px;
       }
       .clickedText {
-        color:#832AC5;
+        color:#B579E3;
         font-family:"Cantarell";
+        font-size:20px;
+        margin-top:0px;
+        margin-bottom:0px;
+      }
+      .altText {
+        color:gray;
+        font-family:"Cantarell";
+        font-size:14px;
+        margin-top:0px;
+        margin-bottom:0px;
       }
     </style>
 
@@ -25,6 +42,7 @@
   <body>
 
     <h1>Assignment 4</h1>
+
     <!-- Table of contents -->
     <div>
       <h2>Challenge 1: Navigation Bar</h2>
@@ -157,7 +175,8 @@
       </table>
 
   </div>
-    <!-- Form -->
+
+  <!-- Form -->
   <div style="line-height:2">
       <h2>Challenge 3: Create a Form</h2>
 
@@ -175,6 +194,7 @@
         <label for="number">Please input your phone number:</label>
         <input type="range" id="number" value="0" min="0" max="9999999999" oninput="this.nextElementSibling.value = this.value">
         <output>0</output>
+        <!-- Code found at https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value -->
 
         <br>
 
@@ -182,14 +202,107 @@
       </form>
 
     </div>
-      <!-- Google Search Page -->
-    <div style="background-color:#303030">
-      <h2 class="searchText">Challenge 4: Google Search Page</h2>
+
+    <!-- Google Search Page -->
+    <div style="background-color:#252525">
+      <h2 style="font-family:Cantarell;font-size:24px;color:lightgray">Challenge 4: Google Search (for 'google search ')</h2>
       <hr style="color:lightgray">
 
       <p class="searchText">About 7,940,000,000 results (0.55 seconds) </p>
-      <p class="searchText">//search.google.com › search-console › about</p>
-      <h3 class="linkText">Google Search Console</h3>
+
+      <br> <br>
+
+      <p class="searchText">https://search.google.com › search-console › about</p>
+      <p class="linkText">Google Search Console</p>
+      <p class="searchText">Search Console tools and reports help you measure
+        your site's Search traffic and performance, <br>fix issues, and make your
+        site shine in <b>Google Search</b> results.</p>
+
+      <br> <br>
+
+      <p class="searchText">https://www.google.com</p>
+      <p class="clickedText">Google</p>
+      <p class="searchText"><b>Search</b> the world's information, including
+        webpages, images, videos and more. <b>Google</b> has many special features
+        to help you <b>find</b> exactly what you're looking ...</p>
+      <p class="linkText" style="font-size:14px"> Images • My Activity • Docs • Drive</p>
+
+      <br> <br>
+
+      <section style="margin-left:30px">
+        <p class="searchText">https://www.google.com › serch › about</p>
+        <p class="linkText">Google Search - Stay in the Know with Your Google App</p>
+        <p class="searchText">Discover keeps you up to date on all your favorite
+          topics. Follow everything from sports teams and movies to celebrities,
+          hobbies, and more. Plus, you can dive ...</p>
+      </section>
+
+      <br> <br>
+
+      <p class="searchText">https://support.google.com › websearch</p>
+      <p class="linkText">Google Search Help</p>
+      <p class="searchText">Understand & manage your location when you <b>search</b>
+        on <b>Google</b> · Manage Google autocomplete predictions · <b>Find</b> &
+        control your Web & App Activity.</p>
+
+      <br> <br>
+
+      <p class="searchText">https://myactivity.google.com</p>
+      <p class="linkText">Welcome to My Activity - Google</p>
+      <p class="searchText">Welcome to My Activity. Data helps make Google services
+        more useful for you. Sign in to review and manage your activity, including
+        things you've searched ...</p>
+
+      <br> <br>
+
+      <p class="searchText">https://en.wikipedia.org › wiki › Google_Search</p>
+      <p class="clickedText">Google - Search Wikipedia</p>
+      <p class="searchText"><b>Google Search</b> is a search engine provided by
+        Google. Handling more than 3.5 billion searches per day, it has a 92%
+        share of the global search engine market.</p>
+
+      <br> <br>
+
+      <p class="searchText">https://play.google.com › store › apps › details › id=co...</p>
+      <p class="linkText">Apps on Google Play</p>
+      <p class="searchText">The Google app keeps you in the know about things that
+        matter to you. Find quick answers, explore your interests, and stay up to
+        date with Discover.</p>
+      <p class="altText"><span style="color:yellow">&#9733;&#9733;&#9733;&#9733;</span>&#9733;
+        Rating: 4.2 · ‎22,547,554 votes · ‎Free · ‎Android · ‎Utilities/Tools</p>
+      <!-- Code found at https://www.quora.com/How-can-I-change-the-color-of-one-word-in-HTML -->
+
+      <br> <br>
+
+      <p class="searchText">https://developers.google.com › search › docs › how-sear...</p>
+      <p class="linkText">The basics of how Search works - Google Developers</p>
+      <p class="searchText"><b>Google</b> is a fully-automated <b>search</b> engine that uses software known
+        as web crawlers that explore the web on a regular basis to <b>find</b> sites to add to our index ...</p>
+      <p class="altText">Dec 17, 2018 · Uploaded by Google Search Central</p>
+
+      <br> <br>
+
+      <p class="searchText">https://programmablesearchengine.google.com › about</p>
+      <p class="linkText">Programmable Search Engine</p>
+      <p class="searchText">Help people <b>find</b> what they need on your website.
+        Add a customizable <b>search</b> box to your web pages and show fast, relevant
+        results powered by <b>Google</b>.</p>
+
+      <br>
+    </div>
+
+    <!-- Challenge 5 -->
+    <div>
+      <h2>Challenge 5: Accessability Concerns</h2>
+
+      <p>There are a couple of accessability concerns I have regarding the form I have
+        created. The first concern I have is that the text is quite small and can be difficult
+        to read for someone who is visually impared in some way. My main concern, however, is the
+        range slider. Clicking and dragging is difficult for many people with motor issues. Disregarding
+        the fact that I put it there as a joke, the issue of sliders like this is still present. I think
+        possibly making a text box where the user can type the desired input could be a possible solution
+        to this problem.</p>
+
     </div>
   </body>
 </html>
