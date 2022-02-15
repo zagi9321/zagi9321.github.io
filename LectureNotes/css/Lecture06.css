@@ -1,5 +1,6 @@
 .page {
   background-color: lightgray;
+  color: inherit;
 }
 
 p {
@@ -24,6 +25,8 @@ h1 {
 }
 
 .test-class {
+  background-color: inherit;
+  color: inherit;
   font-family: sans-serif;
 }
 
