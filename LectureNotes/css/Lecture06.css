@@ -1,6 +1,6 @@
 .page {
   background-color: lightgray;
-  color: inherit;
+  color: blue;
 }
 
 p {
@@ -14,7 +14,7 @@ p {
 
 h1 {
   background-color: inherit;
-  color: blue;
+  color: inherit;
   font-size: xxx-large;
   text-align: center;
 }

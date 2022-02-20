@@ -1,0 +1,115 @@
+*{
+  background-color: #202020;
+  color: inherit;
+}
+
+h1 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 108px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: inherit;
+  color: #ca883a;
+}
+
+h2 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 72px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: inherit;
+  color: #ca883a;
+}
+
+h3 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: inherit;
+  color: #ca883a;
+}
+
+h4 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 48px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: inherit;
+  color: #ca883a;
+}
+
+h5 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 36px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: inherit;
+  color: #ca883a;
+}
+
+h6 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: inherit;
+  color: #ca883a;
+}
+
+p {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18pt;
+  letter-spacing: 1px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: inherit;
+  color: #ffe6c7;
+}
+
+a {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18pt;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: inherit;
+  color: inherit;
+}
+
+a:link {
+  background-color: inherit;
+  color: #c91c04;
+}
+
+a:hover {
+  background-color: inherit;
+  color: #ca883a;
+}
+
+a:active {
+  background-color: inherit;
+  color: #877f74;
+}
+
+a:visited {
+  background-color: inherit;
+  color: #8c0b19;
+}
