@@ -114,6 +114,16 @@ a:active {
   color: #8c0b19;
 } */
 
+.separator {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-left: 10px;
+  font-size: 16px;
+  background-color: inherit;
+  color: #877f74;
+}
+
 .nav {
   display: flex;
   flex-flow: row nowrap;
@@ -124,7 +134,7 @@ a:active {
 }
 
 .nav a {
-  padding-left: 20px;
+  padding-left: 10px;
   font-size: 16px;
 }
 
@@ -157,4 +167,25 @@ a:active {
   padding-left: 60px;
   max-width: 800px;
   flex-shrink: 1;
+}
+
+.contact {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  list-style: none;
+  margin: 0;
+}
+
+.contact p {
+  font-size: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.contact a {
+  font-size: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
