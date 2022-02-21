@@ -91,7 +91,7 @@ a {
   margin-top: auto;
   margin-bottom: auto;
   background-color: inherit;
-  color: inherit;
+  color: #c91c04;
 }
 
 a:link {
@@ -101,7 +101,7 @@ a:link {
 
 a:hover {
   background-color: inherit;
-  color: #ca883a;
+  color: #8c0b19;
 }
 
 a:active {
@@ -109,7 +109,40 @@ a:active {
   color: #877f74;
 }
 
-a:visited {
+/* a:visited {
   background-color: inherit;
   color: #8c0b19;
+} */
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+
+  list-style: none;
+  margin: 0;
+}
+
+.nav a {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.homepage {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px 20px;
+}
+
+.header {
+  align-self: flex-start;
+  order: 1;
+}
+
+.image {
+  order: 2;
+}
+
+.body {
+  order: 3;
 }
