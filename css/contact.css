@@ -1,5 +1,5 @@
 @media only screen
-  and (max-device-width: 1200px) {
+  and (max-width: 1200px) {
 
       .wrapper {
         display: grid;
@@ -22,7 +22,7 @@
         justify-content: center;
         align-content: center;
         align-items: center;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 3fr 3fr;
         grid-template-rows: 300px;
         grid-gap: 20px;
       }
@@ -56,12 +56,12 @@
       }
 
       .body {
-        grid-column: span 2;
+        grid-column: span 3;
       }
   }
 
 @media only screen
-  and (min-device-width: 1200px) {
+  and (min-width: 1200px) {
 
       body {
         height: 100%;
