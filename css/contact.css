@@ -16,14 +16,14 @@
         grid-column-start: 2;
       }
 
-      .home_container {
+      .contact_container {
         grid-column: span 2;
         display: grid;
         justify-content: center;
         align-content: center;
         align-items: center;
-        grid-template-columns: 2fr, 3fr, 3fr;
-        grid-template-rows: minmax(300px, auto);
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 300px;
         grid-gap: 20px;
       }
 
@@ -56,7 +56,7 @@
       }
 
       .body {
-        grid-column: span 3;
+        grid-column: span 2;
       }
   }
 
@@ -82,9 +82,10 @@
       .nav_container {
       }
 
-      .home_container {
+      .contact_container {
         display: grid;
         grid-template-columns: minmax(0, 250px) minmax(0,800px) minmax(0,800px);
+        grid-template-rows: 125px;
         justify-content: center;
         align-content: center;
         margin-left: 100px;
