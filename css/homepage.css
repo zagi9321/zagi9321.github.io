@@ -1,46 +1,107 @@
 @media only screen
   and (max-device-width: 1200px) {
-      .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+
+      .wrapper {
+        display: grid;
         align-items: center;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px;
+        grid-row: auto;
+        margin-left: 10vw;
+        margin-right: 10vw;
+      }
+
+      .nav_container {
+        grid-column-start: 2;
+      }
+
+      .home_container {
+        grid-column: span 2;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        align-items:center;
+        grid-template-columns: 2fr, 3fr, 3fr;
+        grid-template-rows: minmax(300px, auto);
+        grid-gap: 20px;
       }
 
       .item {
-        margin: 20px;
-        border: 3px solid gray;
+      }
+
+      #first {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      #last {
+        margin-top: 0px;
+        margin-bottom: 0px;
       }
 
       .header {
-        font-size: 96pt;
+        grid-column-start: 2;
+        grid-column-end: 4;
       }
 
       .image {
+        grid-row-start: 1;
+      }
 
+      #image {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
       }
 
       .body {
-
+        grid-column: span 3;
       }
   }
 
 @media only screen
   and (min-device-width: 1200px) {
-      .container {
+
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      .wrapper {
         display: grid;
-        grid-column: minmax(auto, 800px);
-        grid-template-columns: 1fr 2fr 2fr;
+        align-items: center;
+        grid-gap: 20px;
+        grid-template-rows: 50px;
+        grid-row: auto;
+        height: 100vh;
+      }
+
+      .nav_container {
+      }
+
+      .home_container {
+        display: grid;
+        grid-template-columns: minmax(0,1fr) minmax(2fr,800px) minmax(2fr,800px);
         justify-content: center;
         align-content: center;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
         grid-gap: 20px;
-        border: 3px solid black;
       }
 
       .item {
-        border: 3px solid gray;
+      }
+
+      #first {
+        display: inline;
+        float: left;
+      }
+
+      #last {
+        display: inline;
+        float: left;
+        padding-left: 25px;
       }
 
       .header {
@@ -51,6 +112,12 @@
       .body {
         grid-column-start: 2;
         grid-column-end: 4;
+      }
+
+      #image {
+        padding-top: 6px;
+        max-width: 100%;
+        display: block;
       }
 
     }
