@@ -92,6 +92,7 @@ a {
   margin-bottom: auto;
   background-color: inherit;
   color: #c91c04;
+  transition: all .2s ease-out 0s;
 }
 
 a:link {
