@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zander Gilbert - Device</title>
+    <link rel="stylesheet" href="https://use.typekit.net/edv3oya.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/device.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="nav_container">
+            <ul class="nav">
+              <li><a href="../index.html">Home</a></li>
+              <li><p class="separator">|</p></li>
+              <li><a href="../about.html">About</a></li>
+              <li><p class="separator">|</p></li>
+              <li><a href="../work.html">Work</a></li>
+              <li><p class="separator">|</p></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="header">
+            <h1>Airipod wireless<br>charging jig</h1>
+            <img id="headerImage" src="../img/device/device.jpg" alt="device" width="500px">
+        </div>
+
+        <div class="body">
+            <h3>Problem Statement:</h3>
+            <p>I have a phone that can charge wirelessly. The problem is that I have a PopSocket on the back of my phone, making it incompatible with most chargers. To remedy this, I bought a PopSocket brand charger with a divot in it which allows me to charge my phone wirelessly.</p>
+            
+            <img id="phone" src="../img/device/phone.jpg" alt="phone" width="250px">
+            <img id="charger" src="../img/device/charger.jpg" alt="charger" width="250px">
+        
+            <p>I recently bought myself the AirPod Pros which also charge wirelessly. However, the case is just slightly too big to fit in the divot of the charger I have. It falls down one side and doesn't charge. I would like to make some device that can hold them in place while they charge.</p>
+
+            <img src="../img/device/caseInCharger.jpg" alt="case in charger" width="500px">
+
+            <h3>Sketching:</h3>
+            <p>I busted out my sketchpad and started with drawing the case and the charger with their respective dimensions. I then drafted my first Idea of how I would hold the case in place. It took me way too long to figure out how to correctly draw it not to mention I didn't know how to CAD it, so I scrapped it and came up with the second idea, which I was happy with.</p>
+
+            <img src="../img/device/sketch.jpg" alt="sketch" width="500px">
+
+            <h3>CAD:</h3>
+            <p>I started by measuring and modelling the charger and the case to use as reference when designing the jig.</p>
+
+            <img src="../img/device/chargerModel.jpg" alt="charger model" width="250px">
+            <img src="../img/device/caseModel.jpg" alt="case model" width="250px">
+
+            <p>I knew I would have to split this design up into two parts for 3d printing, as there would be two different elevations of material. I thought making the piece to hold the case in place would be easier, so I started there. The solution I came up with while sketching was rather simple. I extruded four arcs around the corners of the case with a 0.5mm tolerance. Those corners needed some structure, so I connected the corners with some crossbars.</p>
+
+            <img src="../img/device/corners1.jpg" alt="corners1" width="250px">
+            <img src="../img/device/corners2.jpg" alt="corners2" width="250px">
+
+            <p>I then moved on to making the part that would fit in the divot of the charger. The easiest solution I could think of was simply to rotate a skewed rectangle around the origin. I gave the ring 0.5mm tolerances on both the sides and bottom.</p>
+
+            <img src="../img/device/ring1-1.jpg" alt="inner ring" width="250px">
+            <img src="../img/device/ring2-1.jpg" alt="inner ring sketch" width="250px">
+
+            <p>To connect the ring and the corners, I decided to use rectangular pegs. I gave each hole a tolerance of 0.25mm on all sides.</p>
+
+            <img src="../img/device/corners3.jpg" alt="corners3" width="167px">
+            <img src="../img/device/ring3.jpg" alt="inner ring" width="167px">
+            <img src="../img/device/full.jpg" alt="full device" width="167px">
+            <br>
+            <img src="../img/device/device.jpg" alt="device" width="590px">
+
+            <h3>3d Printing and Assembly:</h3>
+            <p>Now that I had a design that I was satisfied with, It was time to print it. Since this is a small device, it took less than two hours to print. The pieces came out really well, and it turns out the tolerance I chose for the pegs was spot on. The pieces press-fit together really nicely. One of the sides however is tilted, and while this doesn't affect functionality much, it is a small annoyance which I will address later.</p>
+
+            <img src="../img/device/3dprint1.jpg" alt="3d printing" width="167px">
+            <img src="../img/device/3dprint2.jpg" alt="3d printing" width="167px">
+            <img src="../img/device/3dprint3.jpg" alt="3d printing" width="167px">
+            <br>
+            <img src="../img/device/3dprint4.jpg" alt="3d printing" width="250px">
+            <img src="../img/device/3dprint5.jpg" alt="3d printing" width="300">
+
+            <h3>Functionality:</h3>
+            <p>The device works as intended. The device fits in the charger and the case fits in the device. The most important thing however is that the AirPods do charge while in the device.</p>
+
+            <img src="../img/device/3dprint7.jpg" alt="3d printing" width="250px">
+            <img src="../img/device/3dprint6.jpg" alt="3d printing" width="250px">
+            <br>
+            <img src="../img/device/3dprint8.jpg" alt="3d printing" width="540px">
+
+            <h3>Improvements:</h3>
+            <p>While the device does fit relatively well and work as intended, there are a couple things that could be improved. The first improvement to make is to fix the tilting I mentioned earlier. This is easily fixed by adding crossbars in the other direction on the corners to keep them level with each other. The second improvement I can make is that it didn't fit as snugly as I wanted in the charger. It was resting on the bottom of the divot and rocked when I pushed on the sides of the device. I fixed this by raising the bottom of the ring by another half-millimeter. The device now works much better. It fits much more snugly and the corners are level.</p>
+
+            <img src="../img/device/improvements1.jpg" alt="improvements" width="167px">
+            <img src="../img/device/improvements2.jpg" alt="improvements" width="167px">
+            <img src="../img/device/improvements3.jpg" alt="improvements" width="167px">
+            <br>
+            <img src="../img/device/improvements4.jpg" alt="improvements" width="590px">
+
+        </div>
+    </div>
+
+</body>
+</html>

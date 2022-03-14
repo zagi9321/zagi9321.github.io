@@ -23,7 +23,8 @@
           }
 
           .header h1 {
-              font-size: 9.9vw;
+              font-size: 9.3vw;
+              text-align: center;
           }
 
           .body {
@@ -31,6 +32,7 @@
             grid-column-end: -1;
             display: grid;
             justify-items: center;
+            gap: 20px;
           }
     }
 
@@ -65,4 +67,7 @@
             grid-column-start: 2;
         }
 
+        #symphonyPoster {
+            margin: 50px;
+        }
     }

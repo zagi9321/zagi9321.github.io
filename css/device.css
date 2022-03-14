@@ -10,28 +10,36 @@
             grid-row: auto;
             margin-left: 10vw;
             margin-right: 10vw;
-          }
+        }
     
-          .nav_container {
+        .nav_container {
             grid-column-start: 2;
-          }
+        }
           
-          .header {
-            grid-column-start: 1;
-            grid-column-end: -1;display: grid;
-            justify-items: center;
-          }
-
-          .header h1 {
-              font-size: 9.9vw;
-          }
-
-          .body {
+        .header {
             grid-column-start: 1;
             grid-column-end: -1;
             display: grid;
             justify-items: center;
-          }
+        }
+
+        .header h1 {
+            font-size: 9.9vw;
+            text-align: center;
+        }
+
+        #headerImage {
+            padding: 20px;
+        }
+
+        .body {
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+
+        .body img {
+            padding: 20px;
+        }
     }
 
 @media only screen
@@ -40,18 +48,20 @@
         .wrapper {
             margin-left: 10px;
             margin-right: 10px;
+            margin-bottom: 50px;
             display: grid;
-            align-items: center;
+            align-items: start;
             grid-gap: 20px;
             grid-template-rows: 50px;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 3fr 4fr 4fr;
             grid-row: auto;
-            height: 100vh;
+            /* height: 100vh; */
         }
 
         .nav_container {
+            padding-top: 10px;
             grid-column-start: 1;
-            grid-column-end: 3;
+            grid-column-end: 4;
         }
 
         .header {
@@ -60,9 +70,21 @@
             justify-self: center;
         }
 
-        .body {
-            grid-row-start: 2;
-            grid-column-start: 2;
+        #headerImage {
+            margin-top: 50px;
         }
 
+        .description {
+            grid-column-start: 3;
+            grid-row-start: 2;
+        }
+
+        .description a {
+            font-size: 36pt;
+        }
+
+        .body img {
+            margin: 20px;
+            align-self: center;
+        }
     }
