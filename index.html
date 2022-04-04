@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/edv3oya.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/home.css">
+    <script defer src="./js/home.js"></script>
   </head>
   <body>
 
@@ -35,8 +36,25 @@
 
         <div class="item body">
           <p> Hi, welcome to my website! </p>
+
           <br>
-          <a id="secrets" href="secrets.html">???</a>
+
+          <p>Ask me a question?</p>
+
+          <input type="text" id="question">
+          <button onclick="response()" id="ask">Ask</button>
+          <p id="response"></p>
+          
+          <br>
+
+          <button onclick="bg()" id="bg">Change background color</button>
+          <button onclick="undo()">oh no plese undo</button>
+
+          <br><br>
+          <p>Here are my astounding youtube analytics I guess?</p>
+          <p id="subscribers"></p>
+          <p id="views"></p>
+          <p id="videos"></p>
         </div>
       </div>
     </div>
