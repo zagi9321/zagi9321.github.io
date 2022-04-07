@@ -1,24 +1,86 @@
-const quoteButton = document.getElementById('js-new-quote');
+const quoteButton = document.querySelector('#js-new-quote');
 quoteButton.addEventListener('click', getQuote);
 
-function getQuote() {
-    console.log('yop');
+async function getQuote() {
 
-    const endpoint = 'http://quotes.stormconsultancy.co.uk/random.json';
+    console.log("quote button was clicked");
+    const endpoint = 'http://api.quotable.io/random';
+
     try {
-        let response = await fetch(endpoint);
-        if(!response.ok){}
-            // throw Error(response.)
-        const json = await response.json();
-        console.log(json);
+      const response = await fetch(endpoint);
+      if (!response.ok)
+        throw Error(response.statusText)
+      const json = await response.json();
+      console.log(json);
+      displayQuote(json.content);
     } catch(err) {
-        console.log(err);
-        alert('Failed');
+      console.log(err)
+      alert('Failed');
     }
-    console.log(getResponse(endpoint));
+  }
+
+function displayQuote(quote) { 
+    let words = sentenceToArray(quote);
+    let sentence = jumble(words, bag(words.length));
+
+    const quoteText = document.querySelector('#js-quote-text');
+    const img = ['AE.jpeg', 'BF.png', 'BG.jpeg', 'KM.png', 'MG.jpeg', 'ST.png']
+
+    quoteText.style.backgroundImage = "url('img/" + img[Math.floor(Math.random() * 6)] + "')";
+    quoteText.textContent = sentence; 
 }
 
-function displayQuote(quote) {
-    const quoteText = documet.getElementById('js-qutoe-text');
-    quoteText.textContent=quote;
+function sentenceToArray(str) {
+
+    let curr;
+    let arr = [];
+    let word = '';
+
+    for(let i = 0; i < str.length; i++) {
+
+        curr = str[i];
+
+        if(!isAlpha(curr)) {
+            if(word.length > 0)
+                arr.push(word.toLowerCase());
+            word = '';
+        }
+        else
+            word += curr;
+    }
+    return arr;
+}
+
+function isAlpha(char) {
+    return (char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90) || (char.charCodeAt(0) >= 97 && char.charCodeAt(0) <= 122) || char == "'"; 
+}
+
+function bag(n) {
+
+    let bag = [], order = [];
+    size = n;
+    
+    for(let i = 0; i < n; i++)
+        bag[i] = i;
+
+    for(let i = 0; i < n; i++) {
+        rand = Math.floor(Math.random() * size);
+        order[i] = bag[rand];
+        bag.splice(rand, 1);
+        size--;
+    }
+
+    return order;
+}
+
+function jumble(words, order) {
+
+    let jumble = '';
+
+    for(let i = 0; i < words.length; i++) {
+        jumble += words[order[i]];
+        jumble += ' ';
+    }
+
+    return jumble;
 }
