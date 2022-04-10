@@ -4,7 +4,7 @@ quoteButton.addEventListener('click', getQuote);
 async function getQuote() {
 
     console.log("quote button was clicked");
-    const endpoint = 'http://api.quotable.io/random';
+    const endpoint = 'http://quotes.stormconsultancy.co.uk/random.json';
 
     try {
       const response = await fetch(endpoint);
@@ -12,7 +12,7 @@ async function getQuote() {
         throw Error(response.statusText)
       const json = await response.json();
       console.log(json);
-      displayQuote(json.content);
+      displayQuote(json.quote);
     } catch(err) {
       console.log(err)
       alert('Failed');
