@@ -17,6 +17,8 @@ const r = document.getElementById('reset');
 const winText = document.getElementById('winText');
 
 // Add marked and value properties to each box
+// 'Marked' denotes if there is an x or an o in the square
+// If 'value' is -1, the square is empty, if it is 0, the box has an x, if it is 1, the box has an o
 for(box of boxes) {
     box.marked = false;
     box.value = -1;
@@ -105,8 +107,15 @@ function mark(box, play) {
     box.marked = true;
 
     // If a playuer has won, call the win function with the player who won
-    if(checkWin())
+    if(checkWin()) {
         win(play);
+        return;
+    }
+
+    // Check if the game has drawn
+    // Check after check for win to give the win priority
+    if(checkDraw())
+        draw();
 }
 
 // Check if a player has won
@@ -151,20 +160,39 @@ function checkWin() {
 
 // Displays text saying which player won
 function win(play) {
+    const w = document.createElement('h3');
 
     // Player 2 wins if it is x's (player 1's) turn after the winning turn
     if(play.x) {
-        const w = document.createElement('h1');
         w.textContent = "Player 2 wins!";
         winText.appendChild(w);
     }
 
     // Player 1 wins if it is o's (player 2's) turn after the winning turn
     else {
-        const w = document.createElement('h1');
         w.textContent = "Player 1 wins!";
         winText.appendChild(w);
     }
+}
+
+// Checks if there is a draw
+function checkDraw() {
+
+    // If there exists a box that is empty, return false
+    for(i of boxes) {
+        if(i.value == -1)
+            return false;
+    }
+
+    // If all of the boxes are full, return true
+    return true;
+}
+
+// Displays text saying that the game has been drawn
+function draw() {
+    const d = document.createElement('h3');
+    d.textContent = "It's a draw!"
+    winText.appendChild(d);
 }
 
 // Reset the board
