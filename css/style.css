@@ -102,7 +102,8 @@ a:active {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 300;
   font-style: normal;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
   font-size: 24px;
   color: #877f74;
 }
@@ -135,5 +136,4 @@ a:active {
     body {
       background: linear-gradient(170deg, #202020, #171717);
     }
-
   }

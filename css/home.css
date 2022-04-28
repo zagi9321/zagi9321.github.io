@@ -27,50 +27,6 @@
     .home_container {
       grid-column: span 2;
       display: grid;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-      grid-template-columns: 2fr 3fr 3fr;
-      grid-template-rows: minmax(300px, auto);
-      grid-gap: 20px;
-    }
-
-    .item {
-    }
-
-    #first {
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-
-    #last {
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-
-    .header {
-      grid-column-start: 2;
-      grid-column-end: 4;
-    }
-    
-    .header h1 {
-      font-size: 11vw;
-      text-align: center;
-    }
-
-    .image {
-      grid-row-start: 1;
-    }
-
-    #image {
-      max-width: 100%;
-      max-height: 100%;
-      display: block;
-    }
-
-    .body {
-      grid-column: span 3;
-      grid-row-end: -1;
     }
   }
 
