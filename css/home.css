@@ -26,7 +26,26 @@
 
     .home_container {
       grid-column: span 2;
-      display: grid;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    h1 {
+      font-size: 10em;
+    }
+
+    .image {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #image {
+      width: 60%;
+      align-self: center;
+      justify-self: center;
     }
   }
 
