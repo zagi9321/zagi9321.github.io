@@ -109,4 +109,10 @@
         max-width: 100%;
         display: block;
       }
+
+      .icon {
+        width: 80px;
+        margin-top: 20px;
+        margin-left: 120px;
+      }
     }
