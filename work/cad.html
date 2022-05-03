@@ -26,21 +26,32 @@
 
         
         <div class="header">
-            <h1>Things I Have Made</h1>
+            <h3>Things I Have Made</h3>
         </div>
 
-        <p class="description">
-            <a href="./device.html">Airpods wireless charging jig</a> <br>
+        <p class="deviceDescription">
+            <a href="./device.html">Airpods wireless<br>charging jig</a> <br>
             A quick device I made to hold my Airpods case in place on my wireless charger.
         </p>
 
-        <input id="device" type="image" alt="device" src="../img/device/device.jpg" width="500" onclick="redirect()">
+        <input id="device" type="image" alt="device" src="../img/device/device.jpg" width="500" onclick="redirectDevice()">
+
+        <p class="fountainDescription">
+            <a href="./fountain.html"> Fountain</a> <br>
+            A modern design for a fountain.
+        </p>
+
+        <input id="fountain" type="image" alt="fountain" src="../img/fountain/fountain.png" width="500" onclick="redirectFountain()">
 
     </div>
 
     <script>
-        function redirect() {
+        function redirectDevice() {
             location.href="./device.html";
+        }
+
+        function redirectFountain() {
+            location.href="./fountain.html";
         }
     </script>
 </body>

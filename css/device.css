@@ -87,4 +87,8 @@
             margin: 20px;
             align-self: center;
         }
+
+        .body {
+            margin-left: 50px;
+        }
     }

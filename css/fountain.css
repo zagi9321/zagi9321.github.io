@@ -28,23 +28,26 @@
             text-align: center;
         }
 
-        #device {
-            width: 400px;
+        #headerImage {
+            padding: 20px;
+        }
+
+        .body {
             grid-column-start: 1;
-            grid-row-start: 3;
-            margin-right: 10px
+            grid-column-end: -1;
         }
 
-        .description {
-            grid-column-start: 2;
-            grid-row-start: 3;
-            margin-left: 10px;
+        .body img {
+            padding: 20px;
         }
 
-        .description a {
-            font-size: 36pt;
+        #render1 {
+            width: 250px;
         }
 
+        #render2 {
+            width: 250px;
+        }
     }
 
 @media only screen
@@ -53,16 +56,18 @@
         .wrapper {
             margin-left: 10px;
             margin-right: 10px;
+            margin-bottom: 50px;
             display: grid;
-            align-items: center;
+            align-items: start;
             grid-gap: 20px;
             grid-template-rows: 50px;
-            grid-template-columns: 2fr 1fr 2fr;
+            grid-template-columns: 3fr 4fr 4fr;
             grid-row: auto;
-            height: 100vh;
+            /* height: 100vh; */
         }
 
         .nav_container {
+            padding-top: 10px;
             grid-column-start: 1;
             grid-column-end: 4;
         }
@@ -73,33 +78,33 @@
             justify-self: center;
         }
 
-        .deviceDescription {
+        #headerImage {
+            margin-top: 50px;
+        }
+
+        .description {
             grid-column-start: 3;
             grid-row-start: 2;
         }
 
-        .deviceDescription a {
+        .description a {
             font-size: 36pt;
         }
 
-        #device {
-            grid-column-start: 2;
-            grid-row-start: 2;
+        .body img {
             margin: 20px;
+            align-self: center;
         }
 
-        .fountainDescription {
-            grid-column-start: 2;
-            grid-row-start: 3;
+        .body {
+            margin-left: 50px;
         }
 
-        .fountainDescription a {
-            font-size: 36pt;
+        #render1 {
+            width: 500px;
         }
 
-        #fountain {
-            grid-column-start: 3;
-            grid-row-start: 3;
-            margin: 20px;
+        #render2 {
+            width: 500px;
         }
     }
